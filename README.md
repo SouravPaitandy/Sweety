@@ -235,7 +235,7 @@ Sweety includes a comprehensive automated integration test suite written with **
 
 ### Safety Guarantees
 * All tests are strictly sandboxed in the dedicated `sweety_test` database.
-* [setup.js](Kenpath-Assignment-Webapp/Sweety/server/tests/setup.js) validates that the connected database name is strictly `sweety_test`. If any connection to `sweety` is detected, the run aborts immediately.
+* [setup.js](server/tests/setup.js) validates that the connected database name is strictly `sweety_test`. If any connection to `sweety` is detected, the run aborts immediately.
 * Cleanup routines only remove test-generated records (`@test.sweety`).
 * Database connections are cleanly closed upon completion with no hanging handles.
 
