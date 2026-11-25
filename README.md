@@ -1,4 +1,4 @@
-# Sweety — Blood Glucose Monitoring & Reporting Application
+# Sweety - Blood Glucose Monitoring & Reporting Application
 
 Sweety is a full-stack health application designed to help individuals track daily blood glucose readings, monitor daily control, and analyze glycemic patterns through structured daily, month-to-date, and previous-month statistical reports.
 
@@ -164,7 +164,7 @@ DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=sweety
 DB_USER=sweety_app
-DB_PASSWORD=postgres
+DB_PASSWORD=db_password
 
 CLIENT_URL=http://localhost:5173
 
@@ -235,7 +235,7 @@ Sweety includes a comprehensive automated integration test suite written with **
 
 ### Safety Guarantees
 * All tests are strictly sandboxed in the dedicated `sweety_test` database.
-* [setup.js](file:///d:/All%20Dev%20Projects%20Kenpath-Assignment-Webapp/Sweety/server/tests/setup.js) validates that the connected database name is strictly `sweety_test`. If any connection to `sweety` is detected, the run aborts immediately.
+* [setup.js](Kenpath-Assignment-Webapp/Sweety/server/tests/setup.js) validates that the connected database name is strictly `sweety_test`. If any connection to `sweety` is detected, the run aborts immediately.
 * Cleanup routines only remove test-generated records (`@test.sweety`).
 * Database connections are cleanly closed upon completion with no hanging handles.
 
